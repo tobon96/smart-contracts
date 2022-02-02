@@ -366,8 +366,8 @@
       ]
     },
     "C:\\Users\\Juan Pablo EPAM\\Documents\\NFT Hardhat\\contracts\\AZNFT.sol": {
-      "lastModificationDate": 1643772987114,
-      "contentHash": "1f82bc969890fbc0c36febff1a3c3bb5",
+      "lastModificationDate": 1643812263520,
+      "contentHash": "1edbcaf6ea26a2d588c7af101f9d16ae",
       "sourceName": "contracts/AZNFT.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -393,11 +393,10 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
         "@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "@openzeppelin/contracts/utils/Counters.sol",
         "@openzeppelin/contracts/security/PullPayment.sol",
-        "@openzeppelin/contracts/utils/math/SafeMath.sol"
+        "@openzeppelin/contracts/access/Ownable.sol"
       ],
       "versionPragmas": [
         "^0.8.0"

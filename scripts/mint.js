@@ -6,7 +6,17 @@ task("mint", "Mints from the NFT contract")
   .addParam("address", "The address to receive a token")
   .setAction(async function (taskArguments, hre) {
     const contract = await getContract("AZNFT", hre);
-    const transactionResponse = await contract.mintTo(taskArguments.numberoftokens, {
+    const transactionResponse = await contract.mintTo(taskArguments.address, {
+      gasLimit: 500_000,
+    });
+    console.log(`Transaction Hash: ${transactionResponse.hash}`);
+  });
+
+task("withdraw", "Withdraw from the NFT contract")
+  .addParam("address", "The address to receive the funds")
+  .setAction(async function (taskArguments, hre) {
+    const contract = await getContract("AZNFT", hre);
+    const transactionResponse = await contract.withdrawPayments(taskArguments.address, {
       gasLimit: 500_000,
     });
     console.log(`Transaction Hash: ${transactionResponse.hash}`);
@@ -43,13 +53,4 @@ task("token-uri", "Fetches the token metadata for the given token ID")
     console.log(
       `Metadata fetch response: ${JSON.stringify(metadata, null, 2)}`
     );
-  });
-
-task("flip-sale-state", "Set the sales so tokens can be minted")
-  .setAction(async function (taskArguments, hre) {
-    const contract = await getContract("AZNFT", hre);
-    const response = await contract.flipSaleState({
-      gasLimit: 500_000,
-    });
-    console.log(`Transaction Hash: ${response.hash}`);
   });
