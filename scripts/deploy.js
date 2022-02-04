@@ -18,6 +18,6 @@ task("deploy", "Deploys the NFT.sol contract").setAction(async function (
     "AZNFT",
     getAccount()
   );
-  const nft = await nftContractFactory.deploy("AlienzNFT", "AZNFT", 3);
+  const nft = await nftContractFactory.deploy("AlienzNFT", "AZNFT", 100);
   console.log(`Contract deployed to address: ${nft.address}`);
 });

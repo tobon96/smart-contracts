@@ -1,0 +1,39 @@
+{
+  "name": "Alienz #38",
+  "description": "Funny NFT alienz",
+  "image": "http://bafybeihv2bwp6ffkmekatmrjxndvn2fcby5reeycebjuizeiwi6jtvetpa.ipfs.dweb.link/images/images/38.png",
+  "dna": "ea6eeba4bcfe752907d19e402de79cd0a414b641",
+  "edition": 38,
+  "date": 1643927215389,
+  "attributes": [
+    {
+      "trait_type": "Fondo",
+      "value": "Fondo2"
+    },
+    {
+      "trait_type": "Cuernos",
+      "value": "Cuernos3"
+    },
+    {
+      "trait_type": "Piernas",
+      "value": "Piernas3"
+    },
+    {
+      "trait_type": "Cuerpo",
+      "value": "Cuerpo2"
+    },
+    {
+      "trait_type": "Brazos",
+      "value": "Brazos1"
+    },
+    {
+      "trait_type": "Boca",
+      "value": "Boca"
+    },
+    {
+      "trait_type": "Ojo",
+      "value": "Ojo1"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

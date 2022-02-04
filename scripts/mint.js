@@ -54,3 +54,17 @@ task("token-uri", "Fetches the token metadata for the given token ID")
       `Metadata fetch response: ${JSON.stringify(metadata, null, 2)}`
     );
   });
+
+task(
+  "flip-public-sale-state",
+  "Activates or deactivates the sale status"
+)
+  .setAction(async function (taskArguments, hre) {
+    const contract = await getContract("AZNFT", hre);
+    const transactionResponse = await contract.flipPublicSaleState(
+      {
+        gasLimit: 500_000,
+      }
+    );
+    console.log(`Transaction Hash: ${transactionResponse.hash}`);
+  });

@@ -8,7 +8,7 @@ require("@nomiclabs/hardhat-etherscan");
 require("./scripts/deploy.js");
 require("./scripts/mint.js");
 
-const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
+const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY, ETHERSCAN_API_KEY, GANACHE_PRIVATE_KEY } = process.env;
 
 module.exports = {
   solidity: "0.8.0",
@@ -23,6 +23,10 @@ module.exports = {
       chainId: 1,
       url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_KEY}`,
       accounts: [`0x${ACCOUNT_PRIVATE_KEY}`],
+    },
+    ganache: {
+      url: `HTTP://127.0.0.1:7545`,
+      accounts: [`0x${GANACHE_PRIVATE_KEY}`],
     },
     mumbai: {
       chainId: 80001,
