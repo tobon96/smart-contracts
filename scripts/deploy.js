@@ -15,9 +15,9 @@ task("deploy", "Deploys the NFT.sol contract").setAction(async function (
   hre
 ) {
   const nftContractFactory = await hre.ethers.getContractFactory(
-    "AZNFT",
+    "FULLNFT",
     getAccount()
   );
-  const nft = await nftContractFactory.deploy("AlienzNFT", "AZNFT", 100);
+  const nft = await nftContractFactory.deploy("FullTest", "FULLNFT", "https://safelips.online/assets/meta/contract.json", "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link", 100);
   console.log(`Contract deployed to address: ${nft.address}`);
 });

@@ -366,8 +366,8 @@
       ]
     },
     "C:\\Users\\Juan Pablo EPAM\\Documents\\NFT Hardhat\\contracts\\AZNFT.sol": {
-      "lastModificationDate": 1643933874799,
-      "contentHash": "4087c672f38065f0b202b816c313363d",
+      "lastModificationDate": 1643992517810,
+      "contentHash": "d59c55f702560de747330f2fbd3f0f04",
       "sourceName": "contracts/AZNFT.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -403,7 +403,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "AZNFT"
+        "FULLNFT"
       ]
     },
     "C:\\Users\\Juan Pablo EPAM\\Documents\\NFT Hardhat\\node_modules\\@openzeppelin\\contracts\\security\\PullPayment.sol": {
