@@ -13,7 +13,7 @@ npx ipfs-car --pack images --output images.car
 npx hardhat set-base-token-uri --base-url "https://bafybeihisekztoxvivoj2ip5m6e74zb55d5uvy6q5u3yc6ydughi6rk4gy.ipfs.dweb.link/metadata/"
 
 #Verificacion del contrato, tambien compila los cambios nuevos
-npx hardhat verify --contract "contracts/AZNFT.sol:FULLNFT" --network rinkeby 0xc6F8810Fc8F173F15A60479bd2427aE1D055bA66 "FullTest" "FULLNFT" "https://safelips.online/assets/meta/contract.json" "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link" "100"
+npx hardhat verify --contract "contracts/AZNFT.sol:FULLNFT" --network rinkeby 0xD25D54EAfD5AF6D2E87306f03c08F8D3468E69eA "FullTest2" "FULLNFT" "https://safelips.online/assets/meta/contract.json" "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link"
 
 #Mint con hardhat
 npx hardhat mint --address 0x828b07331B767C4150b87d38b43Fd22ee975727c

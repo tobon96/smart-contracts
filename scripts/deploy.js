@@ -18,6 +18,6 @@ task("deploy", "Deploys the NFT.sol contract").setAction(async function (
     "FULLNFT",
     getAccount()
   );
-  const nft = await nftContractFactory.deploy("FullTest", "FULLNFT", "https://safelips.online/assets/meta/contract.json", "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link", 100);
+  const nft = await nftContractFactory.deploy("FullTest2", "FULLNFT", "https://safelips.online/assets/meta/contract.json", "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link");
   console.log(`Contract deployed to address: ${nft.address}`);
 });
