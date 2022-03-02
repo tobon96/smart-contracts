@@ -1,8 +1,8 @@
 {
-    "name": "FullTest Network",
+    "name": "BPSC",
     "description": "Weird NFTs for testing SC in Solidty",
     "image": "https://safelips.online/assets/meta/contract.png",
-    "external_link": "https://openseacreatures.io",
+    "external_link": "www.buenapizzasocialclub.com",
     "seller_fee_basis_points": 200,
     "fee_recipient": "0xbf1AaC55948834431c8711e98a16fb2C30aeDa7D"
 }

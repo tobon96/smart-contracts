@@ -2,7 +2,12 @@
 npx hardhat compile
 
 #Desplegar el contrato, añador --network para desplegar en la red que se quiera
-npx hardhat deploy
+npx hardhat run .\scripts\deploy_v2.js --network rinkeby
+
+#Verificacion del contrato, tambien compila los cambios nuevos
+npx hardhat verify --contract "contracts/BPSC.sol:BPSC" --network rinkeby 0x751f8c080390F2FC1b99636C56818A70d858E10d "Test BPSC" "BPSC" "https://safelips.online/assets/meta/contract.json" "https://bafkreiba26n47tgsl4wsy7f3vyj5at7iytp2slssdp2rybjsf4iz7k4kfm.ipfs.dweb.link"
+
+npx hardhat verify --contract "contracts/AZNFT.sol:FULLNFT" --network mumbai 0x2C8599541DFf88E3234f75ffE6417d4D5F31E79A "Test BPSC" "BPSC" "https://safelips.online/assets/meta/contract.json" "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link"
 
 # ¡IMPORTANTE! Modificar dirección del contrato en .env
 #Obtener archivo .car de imágenes y metadatos
@@ -11,15 +16,6 @@ npx ipfs-car --pack images --output images.car
 
 # Setup para url de metadatos
 npx hardhat set-base-token-uri --base-url "https://bafybeihisekztoxvivoj2ip5m6e74zb55d5uvy6q5u3yc6ydughi6rk4gy.ipfs.dweb.link/metadata/"
-
-#Verificacion del contrato, tambien compila los cambios nuevos
-npx hardhat verify --contract "contracts/AZNFT.sol:FULLNFT" --network rinkeby 0xD25D54EAfD5AF6D2E87306f03c08F8D3468E69eA "FullTest2" "FULLNFT" "https://safelips.online/assets/meta/contract.json" "https://bafkreib7xbvenpli2cyozlo33jxi4s5pd53ktonp4w3a2obdzugzlrwxiy.ipfs.dweb.link"
-
-#Mint con hardhat
-npx hardhat mint --address 0x828b07331B767C4150b87d38b43Fd22ee975727c
-
-#Verificar informacion del token
-npx hardhat token-uri --token-id 1
 
 https://safelips.online/assets/meta/contract.json
 
